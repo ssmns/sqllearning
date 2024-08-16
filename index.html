@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SQL Cheat Sheet</h1>
+
+      <div class="paragraph">
+        <p>
+          We use Sqlite and the Sakila Sample database [<a
+            href="https://www.kaggle.com/datasets/atanaskanev/sqlite-sakila-sample-database"
+            target="_blank"
+            >kaggle.com</a
+          >]. <br />
+        </p>
+        <p>The diagram of database is:</p>
+        <p>
+          <img src="" alt="" srcset="">
+        </p>
+      </div>
+
+      <div class="cheats">
+        <div class="section">
+          <div class="title">
+            <a
+              href="sections/basics/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ph-duotone ph-database"></i>
+              <h2>Basics</h2>
+            </a>
+          </div>
+          <div class="contents col-5">
+            <div>
+              <p>select</p>
+              <p>from</p>
+              <p>where</p>
+            </div>
+            <div>
+              <p>group by</p>
+              <p>having</p>
+              <p>oerder by</p>
+              <p>limit</p>
+            </div>
+            <div>
+              <p>=</p>
+              <p>!=</p>
+              <p><</p>
+              <p>></p>
+            </div>
+            <div>
+              <p><=</p>
+              <p>>=</p>
+              <p>True</p>
+              <p>False</p>
+            </div>
+            <div>
+              <p>not</p>
+              <p>in</p>
+              <p>between</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="ph-duotone ph-sigma"></i>
+            <h2>Aggregate Functions</h2>
+          </div>
+          <div class="contents col-3">
+            <div>
+              <p>min()</p>
+              <p>max()</p>
+              <p>avg()</p>
+            </div>
+            <div>
+              <p>count()</p>
+              <p>median()</p>
+              <p>mode()</p>
+              <p>stddev()</p>
+            </div>
+            <div>
+              <p>w/group by</p>
+              <p>w/ having</p>
+              <p>w/ distinct</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="ph-duotone ph-text-aa"></i>
+            <h2>String Manipulation</h2>
+          </div>
+          <div class="contents col-3">
+            <div>
+              <p>concat()</p>
+              <p>replace()</p>
+              <p>reverse()</p>
+              <p>trim()</p>
+            </div>
+            <div>
+              <p>upper()</p>
+              <p>lower()</p>
+              <p>len()</p>
+              <p>str()</p>
+            </div>
+            <div>
+              <p>wildcards (%)</p>
+              <p>like / ilike</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="ph-duotone ph-calendar-dots"></i>
+            <h2>Date Manipulation</h2>
+          </div>
+          <div class="contents col-2">
+            <div>
+              <p>day()</p>
+              <p>month()</p>
+              <p>year()</p>
+              <p>getdate()</p>
+            </div>
+            <div>
+              <p>date_add()</p>
+              <p>datediff()</p>
+              <p>date_trunc()</p>
+              <p>date_format()</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="ph-duotone ph-link"></i>
+            <h2>Joins</h2>
+          </div>
+          <div class="contents col-2">
+            <div>
+              <p>inner join</p>
+              <p>left join</p>
+              <p>outer join</p>
+              <p>self join</p>
+            </div>
+            <div>
+              <p>anti join</p>
+              <p>joining on multiple keys</p>
+              <p>joining on a condition</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="ph-duotone ph-paint-brush-household"></i>
+            <h2>Cleaning & Transformation</h2>
+          </div>
+          <div class="contents col-3">
+            <div>
+              <p>cast()</p>
+              <p>coalesce()</p>
+              <p>case when</p>
+              <p>ifnull()</p>
+            </div>
+            <div>
+              <p>iff()</p>
+              <p>listagg()</p>
+              <p>except</p>
+            </div>
+            <div>
+              <p>Union</p>
+              <p>Union All</p>
+              <p>Intersect</p>
+              <p>Minus</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="ph-duotone ph-grid-four"></i>
+            <h2>Window Functions</h2>
+          </div>
+          <div class="contents col-3">
+            <div>
+              <p>sum()</p>
+              <p>count()</p>
+              <p>avg()</p>
+              <p>max()</p>
+              <p>min()</p>
+            </div>
+            <div>
+              <p>row_number()</p>
+              <p>rank()</p>
+              <p>denserank()</p>
+              <p>lead()</p>
+              <p>lag()</p>
+            </div>
+            <div>
+              <p>over( ...</p>
+              <p>partition by<</p>
+              <p>order by</p>
+              <p>)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="ph-duotone ph-student"></i>
+            <h2>Advanced</h2>
+          </div>
+          <div class="contents col-2">
+            <div>
+              <p>CTEs</p>
+              <p>UDFs</p>
+              <p>Data Modeling</p>
+              <p>Subqueries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
