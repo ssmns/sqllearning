@@ -10,6 +10,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 25px;
+
 }
 
 .cheats {
@@ -86,34 +88,49 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 
- .hljs {
-  
+div.coder {
+  margin: 0;
   display: block;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 12pt;
   overflow-x: auto;
-  padding: 0.5em;
-  border-radius: 15px;
-  width: 300px;
-  border: 1px rgb(221, 221, 221) solid;
-}
-pre {
+  padding: 30px 30px 20px;
+  scrollbar-width: thin;
+  -moz-tab-size: 4;
+  tab-size: 4;
   position: relative;
-  margin: 1em;
+  border-radius: 0.25em;
+  border: none !important;
 }
-pre > span {
-  user-select: none;
-  min-width: 55px;
-  text-align: center;
+
+div.coder h2 {
   position: absolute;
-  margin: auto;
-  /* border: 1px red solid; */
-  background-color: rgb(63, 63, 63);
-  color: white;
   top: 0;
   right: 0;
-  padding: 5px;
-  border-radius: 0 15px 0 15px;
-  font-weight: 600;
+  font-size: 12pt;
+  font-weight: 900;
+  background-color: black;
+  padding: 0.25em  0.5em 0.25em ;
+  border-radius: 0 0 0 0.25em;
+  border: none !important;
+  text-shadow: 1px 1px 1pt #666666 ;
+  
 }
+
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+    Introduced in Internet Explorer 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
 
 @media screen and (max-width: 950px) {
   .cheats {

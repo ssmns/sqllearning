@@ -3,51 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css"
-    />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="/assets/highlight/gml.min.css"
-    />
+    <link href="/css/noto-ubuntu.style.css" rel="stylesheet" />
+    <link href="/css/phosphor.style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/highlight/default.css" />
+    <link rel="stylesheet" href="/assets/highlight/obsidian.min.css" />
     <script src="/assets/highlight/highlight.min.js"></script>
     <script src="/assets/highlight/languages/go.min.js"></script>
     <script src="/assets/highlight/languages/sql.min.js"></script>
+
+
     <link rel="stylesheet" href="/css/style.css" />
     <title>SQL::Basics</title>
   </head>
   <body>
     <div class="container">
       <p>Select all tables in sql lite</p>
-      <pre><code class="code language-sql">
-.tabels
-        </code>
-      <span>Sqlite</span>
-      </pre>
-      <p>show all contents of albums.</p>
-      <pre><code class="language-sql">
-select * from album;
-        </code>
-        <span>SQL</span>
-      </pre>
-
-      <pre><code class="language-html">...</code>
-        <span>HTML</span></pre>
+      <div class="coder language-sql">
+selec * from table.js
+      </div>
     </div>
 
-    <script>
-      hljs.highlightAll();
-    </script>
+    <script src="/assets/scripts/highlight.js"></script>
+
 
   </body>
 </html>
