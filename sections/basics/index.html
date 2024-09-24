@@ -17,30 +17,37 @@
     />
 
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
       rel="stylesheet"
+      href="/assets/highlight/gml.min.css"
     />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
-
+    <script src="/assets/highlight/highlight.min.js"></script>
+    <script src="/assets/highlight/languages/go.min.js"></script>
+    <script src="/assets/highlight/languages/sql.min.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
     <title>SQL::Basics</title>
   </head>
   <body>
     <div class="container">
-      
-        <p>Select all tables in sql lite</p>
-        <pre><code class="code language-sql">
-            .tabels
-        </code></pre>
-        <p>
-            show all contents of albums.
-        </p>
-        <pre><code class="code language-sql">
-            select * from album;
-        </code></pre>
-        
+      <p>Select all tables in sql lite</p>
+      <pre><code class="code language-sql">
+.tabels
+        </code>
+      <span>Sqlite</span>
+      </pre>
+      <p>show all contents of albums.</p>
+      <pre><code class="language-sql">
+select * from album;
+        </code>
+        <span>SQL</span>
+      </pre>
 
+      <pre><code class="language-html">...</code>
+        <span>HTML</span></pre>
     </div>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+
   </body>
 </html>
